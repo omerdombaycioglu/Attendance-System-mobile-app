@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  final String _baseUrl = 'http://192.168.1.40';
+  final String _baseUrl = 'http://youripv4address';
 
   Future<Map<String, dynamic>?> studentLogin(String email, String password) async {
     final response = await http.post(
